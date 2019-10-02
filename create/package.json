@@ -1,0 +1,4 @@
+{
+    "main": "../build/create-using-macro.js",
+    "types": "../build/create-using-macro.d.ts"
+}
