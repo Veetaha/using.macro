@@ -35,7 +35,7 @@
         "rebuild": "npm-run-all clean build",
         "clean": "rimraf build",
         "bump-deps": "ncu -u && npm i",
-        "test": "jest | coveralls",
+        "test": "jest && cat coverage/lcov.info | coveralls",
         "test:debug": "node --inspect-brk node_modules/.bin/jest --runInBand"
     },
     "keywords": [],

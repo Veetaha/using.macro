@@ -8,7 +8,6 @@ module.exports = {
     moduleFileExtensions: [ "ts", "js" ],
     testRegex: ".*\\.test\\.ts$",
     coverageDirectory: "coverage",
-    coverageReporters: [ "text-lcov" ],
     testEnvironment: "node",
     collectCoverage: true
 };
