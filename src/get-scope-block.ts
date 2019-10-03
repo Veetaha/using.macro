@@ -29,7 +29,8 @@ export function getScopeBlock({path}: Scope, refName: string): ScopeBlock  {
             const body = path.get('body') as NodePath;
             if (!body.isBlockStatement()) {
                 throw createError(path,
-                    'Variable declaration is excepted to occur only inside of a block statement'
+                    'Variable declaration is excepted to occur only inside of a block statement ' +
+                    'or global prgoram scope'
                 );
             }
             return body;
