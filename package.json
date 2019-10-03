@@ -70,6 +70,10 @@
         "babel",
         "typescript"
     ],
-    "author": "",
-    "license": "ISC"
+    "author": "Veetaha",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Veetaha/using.macro.git"
+    }
 }
