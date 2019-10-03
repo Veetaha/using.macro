@@ -3,14 +3,8 @@
 [![Npm](https://img.shields.io/npm/v/using.macro?label=npm%20package&logo=logos&style=for-the-badge)](https://www.npmjs.com/package/using.macro)
 
 [![Babel Macro](https://img.shields.io/badge/babel--macro-%F0%9F%8E%A3-f5da55.svg?style=flat-square)](https://github.com/kentcdodds/babel-plugin-macros)
-
-
 [![Build Status](https://travis-ci.com/Veetaha/using.macro.svg?branch=master)](https://travis-ci.com/Veetaha/using.macro)
-
-
 [![Coverage Status](https://coveralls.io/repos/github/Veetaha/using.macro/badge.svg?branch=master)](https://coveralls.io/github/Veetaha/using.macro?branch=master)
-
-
 [![TypeScript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-%230074c1.svg)](https://www.typescriptlang.org/)
 
 Just plain old C++ RAII (or C# `using var`) implementation for TypeScipt via [`'babel-plugin-macros'`](https://github.com/kentcdodds/babel-plugin-macros).

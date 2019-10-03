@@ -1,6 +1,6 @@
 {
     "name": "using.macro",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "babel-plugin-macro for automatic try-finally blocks and C++ like RAII resource management",
     "main": "build/using.macro.js",
     "types": "build/using.macro.d.ts",
