@@ -7,7 +7,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/Veetaha/using.macro/badge.svg?branch=master)](https://coveralls.io/github/Veetaha/using.macro?branch=master)
 [![TypeScript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-%230074c1.svg)](https://www.typescriptlang.org/)
 
-Just plain old C++ RAII (or C# `using var`) implementation for TypeScipt via [`'babel-plugin-macros'`](https://github.com/kentcdodds/babel-plugin-macros).
+Just plain old C++ RAII (or C# `using` declaration) implementation for TypeScipt via [`'babel-plugin-macros'`](https://github.com/kentcdodds/babel-plugin-macros).
 
 ## :zap: Rationale
 
