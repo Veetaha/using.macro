@@ -36,7 +36,7 @@ try {
     resource.delete();    // this part is fully customizable!
 }
 ```
-## Syntax
+## :sunglasses: Syntax
 
 The way you import this macro doesn't matter (as long as TypeScript eats it):
 ```ts
@@ -52,7 +52,7 @@ There are only two options for invoking this macro:
 * As a single expression statement ` using(expression);` so that a varaible will be created automatically to release it for you.
 
 
-## Customize
+## :hammer: Customize
 
 By default when you do 
 ```ts
@@ -100,13 +100,13 @@ createUsingMacro(garbageVariableIdentifier => {
 })
 ```
 
-## Caveats
+## :warning: Caveats
 
 Unfortunately `'babel-plugin-macros'` doesn't currently natively support TypeScript macros
 in runtime, so you need to build your custom `*.macro.ts` to `*.macro.js` file,
 and put in the same directory as `ts` file.
 
-## References
+## :arrow_upper_right: References
 Originally this macro was created for simplifying the usage of
 [`'embind'`](https://emscripten.org/docs/porting/connecting_cpp_and_javascript/embind.html) C++ object
 handles
