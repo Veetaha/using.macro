@@ -18,8 +18,8 @@ With this plugin the cleanup is done automatically for you.
 ```ts
 import using from 'using.macro';
 
-const resource = using( new Resource() );
-using ( new AutoVarResource() );
+const resource = using (new Resource());
+using (new AutoVarResource());
 doStuffWithResource(resource);
 
     ↓ ↓ ↓ ↓ ↓ ↓
@@ -76,7 +76,7 @@ and use it in your code this way:
 ```ts
 import usingPtr from './using-ptr.macro';
 
-const ptr = usingPtr ( malloc(42) );
+const ptr = usingPtr (malloc(42));
 // stuff
 
     ↓ ↓ ↓ ↓ ↓ ↓
