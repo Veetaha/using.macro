@@ -9,7 +9,7 @@
 
 Just plain old C++ RAII (or C# `using var`) implementation for TypeScipt via [`'babel-plugin-macros'`](https://github.com/kentcdodds/babel-plugin-macros).
 
-## Rationale
+## :zap: Rationale
 
 Suppose you have a local resource handle that you must manually release in the same
 scope.
