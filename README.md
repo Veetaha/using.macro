@@ -35,7 +35,7 @@ try {
 ```
 ## Syntax
 
-The way you import macro doesn't matter (as long as TypeScript eats it):
+The way you import this macro doesn't matter (as long as TypeScript eats it):
 ```ts
 import using from 'using.macro';
 import kek   from 'using.macro';
@@ -43,7 +43,7 @@ import { using } from 'using.macro';
 import { using as kek } from 'using.macro';
 ```
 
-There are only two variants for invoking this macro:
+There are only two options for invoking this macro:
 
 * Near variable declaration `var/let/const varId = using(expresssion);`
 * As a single expression statement ` using(expression);` so that a varaible will be created automatically to release it for you.
@@ -55,7 +55,7 @@ By default when you do
 ```ts
 import using from 'using.macro';
 ```
-you'll get `.delete()` method called on your handles.
+you get `.delete()` method called on your handles.
 
 If you want to change this behaviour to e.g. call `free()` function on your handle, 
 you can wrap this macro with your own via `createUsingMacro()` from `'using.macro/create'`:
