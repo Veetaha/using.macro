@@ -68,6 +68,50 @@ test({
             }
         `
     },
+    'works inside of async function declaration scope': {
+        code: code`${using}
+            async function fn() {
+                using(42);
+                await something;
+                await something2;
+                return 66;
+            }
+        `,
+        output: code`
+            async function fn() {
+                const _handle = 42;
+                try {
+                    await something;
+                    await something2;
+                    return 66;
+                } finally {
+                    _handle.delete();
+                }
+            }
+        `
+    },
+    'works inside of generator function declaration scope': {
+        code: code`${using}
+            function* fn() {
+                using(42);
+                yield something;
+                yield something2;
+                return 66;
+            }
+        `,
+        output: code`
+            function* fn() {
+                const _handle = 42;
+                try {
+                    yield something;
+                    yield something2;
+                    return 66;
+                } finally {
+                    _handle.delete();
+                }
+            }
+        `
+    },
     'works inside of function expression scope': {
         code: code`${using}
             (function () {
@@ -92,6 +136,44 @@ test({
                 const _handle = 42;
                 _handle.delete();
             };
+        `,
+    },
+    'works inside of class method scope': {
+        code: code`${using}
+            class Cls {
+                static method() {
+                    using(42);
+                    statement1;
+                    statement2;
+                }
+                method() {
+                    using(42);
+                    statement1;
+                    statement2;
+                }
+            }
+        `,
+        output: code`
+            class Cls {
+                static method() {
+                    const _handle2 = 42;
+                    try {
+                        statement1;
+                        statement2;
+                    } finally {
+                        _handle2.delete();
+                    }
+                }
+                method() {
+                    const _handle = 42;
+                    try {
+                        statement1;
+                        statement2;
+                    } finally {
+                        _handle.delete();
+                    }
+                }
+            }
         `,
     },
     'works when multiple using in one scope': {

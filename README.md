@@ -36,6 +36,17 @@ try {
     resource.delete();    // this part is fully customizable!
 }
 ```
+
+## :dvd: Installation
+Make sure [`babel-plugin-macros`](https://github.com/kentcdodds/babel-plugin-macros),
+is added as `"macros"` item in `"plugins"` array of your babel config file.
+
+Afterwards just install this package **as dev dependency** and use it in your code:
+```
+npm i -D using.macro
+```
+
+
 ## :sunglasses: Syntax
 
 The way you import this macro doesn't matter (as long as TypeScript eats it):
@@ -107,6 +118,10 @@ in runtime, so you need to build your custom `*.macro.ts` to `*.macro.js` file,
 and put in the same directory as `ts` file.
 
 ## :arrow_upper_right: References
+If you are looking for a native `using` binding syntax, please support [this stage 2 proposal](https://github.com/tc39/proposal-explicit-resource-management) and upvote
+this [proposition](https://github.com/tc39/proposal-explicit-resource-management/issues/15#issuecomment-511255293) to it.
+
+
 Originally this macro was created for simplifying the usage of
 [`'embind'`](https://emscripten.org/docs/porting/connecting_cpp_and_javascript/embind.html) C++ object
 handles
