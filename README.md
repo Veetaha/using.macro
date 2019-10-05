@@ -60,7 +60,7 @@ import { using as kek } from 'using.macro';
 There are only two options for invoking this macro:
 
 * Near variable declaration `var/let/const varId = using(expresssion);`
-* As a single expression statement ` using(expression);` so that a varaible will be created automatically to release it for you.
+* As a single expression statement ` using(expression);` so that a variable will be created automatically to release it for you.
 
 
 ## :hammer: Customize
@@ -113,7 +113,7 @@ createUsingMacro(garbageVariableIdentifier => {
 
 ## :warning: Caveats
 
-Unfortunately `'babel-plugin-macros'` doesn't currently natively support TypeScript macros
+Unfortunately `'babel-plugin-macros'` doesn't natively support TypeScript macros
 in runtime, so you need to build your custom `*.macro.ts` to `*.macro.js` file,
 and put in the same directory as `ts` file.
 
@@ -122,6 +122,6 @@ If you are looking for a native `using` binding syntax, please support [this sta
 this [proposition](https://github.com/tc39/proposal-explicit-resource-management/issues/15#issuecomment-511255293) to it.
 
 
-Originally this macro was created for simplifying the usage of
+This macro was originally created for simplifying the usage of
 [`'embind'`](https://emscripten.org/docs/porting/connecting_cpp_and_javascript/embind.html) C++ object
 handles
